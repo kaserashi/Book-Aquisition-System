@@ -1,0 +1,80 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="homepage.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <style>
+.mySlides {display:none;}
+</style>
+    </head>
+<body>
+
+    <div class="navigation-bar">
+  
+  
+      <div id="navigation-container">
+  
+        <img src="logobook.jpg.jpeg">
+  
+        <ul>
+          <li><a href="pagewithnav.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li id = "help"><a href="contactus.html">Contact Us</a></li>
+          <li><a href = "help.html">Help</a></li>
+          <li><a href="userlogin.php">Login</a></li>
+          <li><a href="register.html">Signup</a></li>
+        </ul>
+    </div>
+</div>           
+<div class= "slideshow">
+  <img class="mySlides" src="image.png" style="display:block; margin-left: auto; margin-right: auto; margin-top :50px; margin-bottom: 50px; width:80%; height:80%">
+  <img class="mySlides" src="image2.jpg" style="display:block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom:50px;width:80%;height:80%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<div class="footer">
+    <div class="navigation-bar">
+      <div id="navigation-container">
+  <ul>
+  <li>
+  <img src="logobook.jpg.jpeg">
+  </li>
+  <li>
+    Address:
+    VIT Vellore,
+    Katpadi Road,
+    Vellore,
+    Tamil Nadu 632014
+  </li>
+  <li>
+    Contact Us:
+    Email:vitbarnbooks@gmail.com
+    Mobile No: +918178197468
+  </li>
+  </ul>
+    </div>
+</div> 
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  </body>
+  
+  </html>

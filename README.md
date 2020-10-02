@@ -1,2 +1,2 @@
 # Book-Aquisition-System
-Internet and Web Programming Project
+A real time Internet and Web Programming Project using HTML, CSS, PHP, MySQL.
